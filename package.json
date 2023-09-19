@@ -5,7 +5,7 @@
   "scripts": {
     "studio": "prisma studio",
     "start": "ts-node src/app.ts",
-    "test": "tsc && jest ./dist",
+    "test": "jest --watch ./test",
     "express": "nodemon ./dist/src/infra/http/express.ts",
     "hapi": "ts-node ./dist/src/infra/http/hapi.ts"
   },
