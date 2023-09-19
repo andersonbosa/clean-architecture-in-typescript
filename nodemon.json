@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "ext": "ts,json,prisma",
+  "ignore": [
+    "**/src/logs/**",
+    "*.test.js",
+    "**/fixtures/**"
+  ]
+}
