@@ -5,17 +5,31 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "nodemon: express",
+      "type": "node",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
-      "name": "nodemon",
-      "program": "${workspaceFolder}/src/app.ts",
+      "program": "${workspaceFolder}/src/infra/http/express.ts",
       "request": "launch",
       "restart": true,
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "type": "node"
+    },
+
+    {
+      "name": "nodemon: hapi",
+      "type": "node",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "program": "${workspaceFolder}/src/infra/http/hapi.ts",
+      "request": "launch",
+      "restart": true,
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
     }
   ]
 }
