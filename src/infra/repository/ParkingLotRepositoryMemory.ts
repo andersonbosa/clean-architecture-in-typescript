@@ -1,11 +1,9 @@
 import ParkingLotAdapter from "../../adapter/ParkingLotAdapter"
 import ParkingLot from "../../core/entity/ParkingLot"
 import ParkingLotRepository from "../../core/repository/ParkingLotRepository"
+import { ParkingLotCodes } from '../../types'
 
-export const ParkingLotCodes = {
-  shopping: 'shopping_21b0c8d7',
-  central_park: 'central_park_4db6c371'
-}
+
 
 export default class ParkingLotRepositoryMemory implements ParkingLotRepository {
 

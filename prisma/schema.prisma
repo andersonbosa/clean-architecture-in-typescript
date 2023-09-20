@@ -9,3 +9,18 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+model ParkingLot {
+  id        Int      @id @default(autoincrement())
+  code      String   @unique
+  capacity  Int
+  openHour  DateTime
+  closeHour DateTime
+}
+
+model ParkedCar {
+  id    Int      @id @default(autoincrement())
+  code  String   
+  plate String
+  Date  DateTime
+}

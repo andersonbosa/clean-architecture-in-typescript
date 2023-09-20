@@ -1,7 +1,8 @@
 import EnterParkingLot from "../src/core/usecase/EnterParkingLot"
 import GetParkingLot from "../src/core/usecase/GetParkingLot"
 import { ParkingLotIsCloseError, ParkingLotIsFullError } from '../src/errors'
-import ParkingLotRepositoryMemory, { ParkingLotCodes } from "../src/infra/repository/ParkingLotRepositoryMemory"
+import ParkingLotRepositoryMemory from "../src/infra/repository/ParkingLotRepositoryMemory"
+import { ParkingLotCodes } from '../src/types'
 
 const getEnterDate = (): Date => new Date("2023-09-19 12:00:00")
 
