@@ -1,6 +1,5 @@
-// prismaClient.ts
 import { PrismaClient } from '@prisma/client'
 
-const DatabaseClient = new PrismaClient()
+const dbClient = new PrismaClient()
 
-export default DatabaseClient
+export default dbClient

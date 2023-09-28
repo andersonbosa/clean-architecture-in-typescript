@@ -4,7 +4,6 @@ import ParkingLotRepository from "../../core/repository/ParkingLotRepository"
 import { ParkingLotCodes } from '../../types'
 
 
-
 export default class ParkingLotRepositoryMemory implements ParkingLotRepository {
 
   parkingLots = [
