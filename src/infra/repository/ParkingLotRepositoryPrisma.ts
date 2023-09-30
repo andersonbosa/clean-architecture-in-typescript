@@ -12,15 +12,13 @@ export default class ParkingLotRepositoryPrisma implements ParkingLotRepository 
     const parkingLotData = await dbClient.parkingLot.findUnique({ where: { code } })
     const occupiedSpaces = await dbClient.parkedCar.count()
 
-    const parkingLot = ParkingLotAdapter.create(
-      parkingLotData.code,
-      parkingLotData.capacity,
-      parkingLotData.openHour,
-      parkingLotData.closeHour,
-      occupiedSpaces
-    )
-
-    return parkingLot
+    return ParkingLotAdapter.create(
+          parkingLotData.code,
+          parkingLotData.capacity,
+          parkingLotData.openHour,
+          parkingLotData.closeHour,
+          occupiedSpaces
+        );
   }
 
   /* TODO */

@@ -11,8 +11,7 @@ export default class ParkingLotController {
 
       const getParkingLot = new GetParkingLot(repository)
 
-      const parkingLot = await getParkingLot.execute(params.code)
-      return parkingLot
+      return await getParkingLot.execute(params.code);
 
     } catch (error) {
       return undefined
