@@ -6,8 +6,8 @@ import ParkingLotRepositoryPrisma from '../infra/repository/ParkingLotRepository
 export default class ParkingLotController {
   static async getParkingLot (params, body) {
     try {
-      const repository = new ParkingLotRepositoryPrisma()
-      // const repository = new ParkingLotRepositoryMemory()
+      // const repository = new ParkingLotRepositoryPrisma()
+      const repository = new ParkingLotRepositoryMemory()
 
       const getParkingLot = new GetParkingLot(repository)
 
